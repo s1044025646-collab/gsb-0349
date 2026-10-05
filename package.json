@@ -1,0 +1,17 @@
+{
+  "name": "simplex-teaching-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "受限原始单纯形线性规划教学求解后端（API + CLI + SQLite）",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/*.test.js",
+    "start": "node dist/src/server.js",
+    "cli": "node dist/src/cli.js",
+    "demo": "node dist/src/demo.js"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "typescript": "^5.9.0"
+  }
+}
