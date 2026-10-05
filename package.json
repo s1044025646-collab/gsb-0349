@@ -1,0 +1,21 @@
+{
+  "name": "primal-simplex-lp",
+  "version": "1.0.0",
+  "description": "教学用受限原始单纯形线性规划后端（TypeScript + Node.js + SQLite，仅 API 与 CLI）",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node --no-warnings dist/src/server.js",
+    "cli": "node --no-warnings dist/src/cli.js",
+    "demo": "node --no-warnings dist/src/demo.js",
+    "pretest": "tsc -p tsconfig.json",
+    "test": "node --no-warnings --test \"dist/test/**/*.test.js\""
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
